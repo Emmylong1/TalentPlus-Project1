@@ -10,7 +10,13 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Emmylong1/demo-counter-app-1.git'
             }
         }
+        stage("UNIT Testing"){
 
+            steps{
+                sh "mvn test"
+                
+            }
+        }
 
     }
 } 
