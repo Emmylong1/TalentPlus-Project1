@@ -18,5 +18,13 @@ pipeline {
             }
         }
 
+        stage("integration testing "){
+
+            steps{
+                sh "mvn verify -DskipunitTest"
+                
+            }
+        }
     }
 } 
+
