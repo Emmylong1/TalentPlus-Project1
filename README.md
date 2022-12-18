@@ -1,8 +1,6 @@
 Create a simple spring boot application.
 
-Build a simple REST API.
-
-create a Dockerfile.
+Build a simple REST Api
 
 Build Docker Image.
 
