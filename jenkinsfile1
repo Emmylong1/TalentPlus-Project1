@@ -45,5 +45,13 @@ pipeline {
             }
         }
 
+        stage("Qaulity Gate status"){
+            steps{
+                scripts{
+                    waitForQualityGate abortPipeline: false, credentialsId: 'sonarqube-api-key'
+                  }
+            }
+        }   
+
     }
 } 
